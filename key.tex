@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+\node at (\textwidth/2,\textheight) {\Large Key};
+\pgfmathsetmacro{\h}{\textheight/1cm};
+\draw (0,{\h-2}) rectangle (0.5,{\h-1.5}) node[below right] {Task};
+\draw (0,{\h-3}) node[above right] {\ding{51}} rectangle (0.5,{\h-2.5}) node[below right] {Task completed};
+\draw (0,{\h-4}) rectangle (0.5,{\h-3.5}) node[below right] {Task cancelled};
+\draw[thick] (0,{\h-3.75}) -- (3.5,{\h-3.75});
+\draw[thick] (0.1,{\h-4.5}) -- (0.4,{\h-4.5}) node[right=.1cm] {Notes};
+\end{tikzpicture}
+\clearpage

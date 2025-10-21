@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+\node at (\textwidth/2,\textheight) {\Large Index};
+\pgfmathsetmacro{\h}{\textheight/1cm};
+\node[right] at (0,{\h-2}) {Key};
+\foreach \i in {0,...,\h}
+    \draw[dotted] (0,{\i-2})--(\textwidth,{\i-2});
+\end{tikzpicture}
+\begin{tikzpicture}
+\node at (\textwidth/2,\textheight) {\Large Index};
+\pgfmathsetmacro{\h}{\textheight/1cm};
+\foreach \i in {0,...,\h}
+    \draw[dotted] (0,{\i-2})--(\textwidth,{\i-2});
+\end{tikzpicture}
+\clearpage
